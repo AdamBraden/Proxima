@@ -1,0 +1,22 @@
+﻿<Page
+    x:Class="DemoApp1.Views.CompactOverlayPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Style="{StaticResource PageStyle}"
+    mc:Ignorable="d">
+    <Grid x:Name="ContentArea" Margin="{StaticResource MediumLeftRightMargin}">
+        <Grid
+            Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}">
+            <ScrollViewer Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+                <StackPanel>
+                    <TextBlock TextWrapping="Wrap" Style="{StaticResource SubheaderTextBlockStyle}">
+                    Create and show an AppWindow as a Compact Overlay window (aka Picture-in-Picture).
+                    </TextBlock>
+                    <Button Name="showWindowBtn" Content="Show a CompactOverlay window" Margin="10,30,0,0" Click="ShowWindowBtn_Click"/>
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+</Page>

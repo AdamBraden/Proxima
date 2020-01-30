@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="DemoApp1.Views.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Style="{StaticResource PageStyle}"
+    mc:Ignorable="d">
+    <Grid x:Name="ContentArea" Margin="{StaticResource MediumLeftRightMargin}">
+        <Grid
+            Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}">
+            <!--
+                The SystemControlPageBackgroundChromeLowBrush background represents where you should place your content. 
+                Place your content here.
+            -->
+            <ScrollViewer  MinZoomFactor="1" ZoomMode="Enabled">
+                <Image x:Name="Background"  Margin="0,250,0,0" Source="ms-appx:///Assets/Giraffe.jpg" Stretch="Fill"/>
+            </ScrollViewer>
+            <Button Height="50" Width="200" FontSize="24" Margin="60,60,0,0" VerticalAlignment="Top" Click="Picker_Click">Test Picker</Button>
+            <Button Height="50" Width="200" FontSize="24" Margin="300,60,0,0" VerticalAlignment="Top" Click="UpdateImage_Click">Update Image</Button>
+            <TextBox x:Name="folderTextBox" Height="50" FontSize="24" Margin="60,150,60,0" VerticalAlignment="Top"/>
+        </Grid>
+    </Grid>
+</Page>
